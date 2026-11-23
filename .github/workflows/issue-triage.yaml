@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Welcome Comment to Author
-        uses: peter-evans/create-or-update-comment@7134ca4703758c49330de7ca44e180f338429e4f
+        uses: uses: peter-evans/create-or-update-comment@v4
         with:
           issue-number: ${{ github.event.issue.number }}
           body: |
