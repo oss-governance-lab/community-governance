@@ -10,13 +10,14 @@ permissions:
 jobs:
   triage:
     runs-on: ubuntu-latest
+
     steps:
       - name: Welcome Comment to Author
-        uses: uses: peter-evans/create-or-update-comment@v4
+        uses: peter-evans/create-or-update-comment@v4
         with:
           issue-number: ${{ github.event.issue.number }}
           body: |
-            Chào mừng bạn *@${{ github.event.issue.user.login }}* đã gửi phản hồi cho dự án!
+            Chào mừng bạn **@${{ github.event.issue.user.login }}** đã gửi phản hồi cho dự án!
             Đội ngũ Maintainer đã tiếp nhận và sẽ sàng lọc Issue trong thời gian sớm nhất theo chuẩn Async-first.
             Vui lòng kiểm tra lại xem bạn đã cung cấp đủ Log, OS, và Phiên bản theo mẫu yêu cầu chưa nhé.
 
